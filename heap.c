@@ -42,5 +42,5 @@ Heap* createHeap(){
 
 
 
-   return NULL;
+   return new;
 }
