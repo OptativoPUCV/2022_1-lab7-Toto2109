@@ -80,3 +80,9 @@ heap.c:49:17: error: assignment makes pointer from integer without a cast [-Werr
 cc1.exe: all warnings being treated as errors
 Compilation failed
 a86442c
+Sun May  8 23:42:53 HSP 2022: 
+ heap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  5|2
+total_score: 35/70
+cb2717e
