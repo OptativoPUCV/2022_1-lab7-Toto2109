@@ -44,3 +44,14 @@ Sun May  8 23:30:09 HSP 2022:
  tests:  3|2
 total_score: 25/70
 874cc3f
+Sun May  8 23:38:35 HSP 2022: 
+ heap.c | 14 ++++++++++++++
+ 1 file changed, 14 insertions(+)
+In file included from test.c:4:0:
+test.c: In function 'heap_push':
+heap.c:45:21: error: 'aux' may be used uninitialized in this function [-Werror=maybe-uninitialized]
+         aux -> data = pq->heapArray[parent].data;
+         ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+85677fb
