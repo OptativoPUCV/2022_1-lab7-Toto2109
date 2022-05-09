@@ -66,3 +66,17 @@ heap.c:47:21: error: 'aux' may be used uninitialized in this function [-Werror=m
 cc1.exe: all warnings being treated as errors
 Compilation failed
 07221d2
+Sun May  8 23:42:17 HSP 2022: 
+ heap.c | 11 ++++++-----
+ 1 file changed, 6 insertions(+), 5 deletions(-)
+In file included from test.c:4:0:
+heap.c: In function 'heap_push':
+heap.c:48:17: error: assignment makes integer from pointer without a cast [-Werror=int-conversion]
+         auxPrio = pq -> heapArray[parent].data;
+                 ^
+heap.c:49:17: error: assignment makes pointer from integer without a cast [-Werror=int-conversion]
+         auxData = pq -> heapArray[parent].priority;
+                 ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+a86442c
